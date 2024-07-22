@@ -139,7 +139,7 @@ console.log(
 
 `text-table-fast` has three advantages over `text-table`:
 
-- It is fast in almost all scenarios, and significantly faster on larger tables.
+- It is faster in almost all scenarios, and significantly faster on larger tables.
 - It is under active maintenance, whereas `text-table` hasn't been updated in over a decade.
 - It's written in TypeScript and ships with its own `.d.ts` types, whereas `text-table` requires `@types/text-table` for typings.
 
@@ -150,7 +150,7 @@ console.log(
 - `text-table` includes usage of of [an quadratically expensive `/\s+$/`](https://ota-meshi.github.io/eslint-plugin-regexp/playground/#eJyrVkrOT0lVslLSj4kp1lbRV6oFADQgBS4=); `text-table-fast` uses [`String.prototype.trimEnd`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd) instead.
 - `text-table` executes a regular expression match on each row cell for its `'.'` (decimal) alignment option; `text-table-fast` will skip that match if and when decimal alignment support is added.
 
-> ESLint issue to be filed soon with a performance comparison. ⚡️
+See [eslint/eslint#18709 Performance: long print time in stylish formatter's text-table for long report strings](https://github.com/eslint/eslint/issues/18709) for a performance comparison.
 
 ## Contributors
 
