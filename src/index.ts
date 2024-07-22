@@ -32,7 +32,7 @@ export function textTable(rows: string[][], opts: TextTableOptions = {}) {
 		row.forEach(function (row, i) {
 			const rowLength = stringLength(row);
 
-			if (!acc[i] || rowLength > acc[i]) {
+			if (i >= acc.length || !acc[i] || rowLength > acc[i]) {
 				acc[i] = rowLength;
 			}
 		});
