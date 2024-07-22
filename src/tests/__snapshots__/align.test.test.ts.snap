@@ -1,0 +1,93 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`align > [["abc","12"],["def","3456"]] ["left","right"] 1`] = `
+"
+abc    12
+def  3456
+"
+`;
+
+exports[`align > [["abc","12"]] ["right","right"] 1`] = `
+"
+abc  12
+"
+`;
+
+exports[`align > [["abc","1234"],["def","56"]] ["center","right"] 1`] = `
+"
+abc  1234
+def    56
+"
+`;
+
+exports[`align > [["abc","1234"],["def","56"]] ["left","right"] 1`] = `
+"
+abc  1234
+def    56
+"
+`;
+
+exports[`align > [["abc","1234"],["def","56"]] ["right","left"] 1`] = `
+"
+abc  1234
+def  56
+"
+`;
+
+exports[`align > [["abc","1234"],["def","56"]] ["right","right"] 1`] = `
+"
+abc  1234
+def    56
+"
+`;
+
+exports[`align > [["abc"]] ["right"] 1`] = `
+"
+abc
+"
+`;
+
+exports[`align > [["beep","1024"],["blip","33450"],["abc","1006"],["def","45"]] ["left","right"] 1`] = `
+"
+beep   1024
+blip  33450
+abc    1006
+def      45
+"
+`;
+
+exports[`align > [["beep","1234","abc"],["blip","1234567","abc"],["abc","12345","abcdef"],["def","12","abcd"]] ["center","center","center"] 1`] = `
+"
+beep    1234     abc
+blip  1234567    abc
+ abc   12345   abcdef
+ def     12     abcd
+"
+`;
+
+exports[`align > [["beep","1234","abc"],["blip","1234567","abc"],["abc","12345","abcdef"],["def","12","abcd"]] ["center","right","center"] 1`] = `
+"
+beep     1234    abc
+blip  1234567    abc
+ abc    12345  abcdef
+ def       12   abcd
+"
+`;
+
+exports[`align > [["beep","1234","abc"],["blip","1234567","abc"],["abc","12345","abcdef"],["def","12","abcd"]] ["left","center","left"] 1`] = `
+"
+beep    1234   abc
+blip  1234567  abc
+abc    12345   abcdef
+def      12    abcd
+"
+`;
+
+exports[`align > [["beep","1234","abc"],["blip","1234567","abc"],["abc","12345","abcdef"],["def","12","abcd"]] ["right","right","right"] 1`] = `
+"
+beep     1234     abc
+blip  1234567     abc
+ abc    12345  abcdef
+ def       12    abcd
+"
+`;

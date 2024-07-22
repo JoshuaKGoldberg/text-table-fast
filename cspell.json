@@ -8,5 +8,16 @@
 		"node_modules",
 		"pnpm-lock.yaml"
 	],
-	"words": ["borderless", "knip", "packagejson", "tseslint", "tsup"]
+	"words": [
+		"borderless",
+		"hsep",
+		"knip",
+		"mabc",
+		"mdef",
+		"packagejson",
+		"substack",
+		"tseslint",
+		"tsup",
+		"vitest"
+	]
 }

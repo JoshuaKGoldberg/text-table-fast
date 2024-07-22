@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`align > [["abc","12"],["def","3456"]] " | " 1`] = `
+"
+abc | 12
+def | 3456
+"
+`;
+
+exports[`align > [["abc","12"],["def","3456"]] "|" 1`] = `
+"
+abc|12
+def|3456
+"
+`;
+
+exports[`align > [["abc","12"]] "   " 1`] = `
+"
+abc   12
+"
+`;
+
+exports[`align > [["abc","12"]] "  " 1`] = `
+"
+abc  12
+"
+`;
+
+exports[`align > [["abc","12"]] " " 1`] = `
+"
+abc 12
+"
+`;
+
+exports[`align > [["abc","12"]] "" 1`] = `
+"
+abc12
+"
+`;
+
+exports[`align > [["abc","12"]] "\\t" 1`] = `
+"
+abc	12
+"
+`;
+
+exports[`align > [["abc","12"]] "|" 1`] = `
+"
+abc|12
+"
+`;

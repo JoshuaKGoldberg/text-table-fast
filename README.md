@@ -1,6 +1,10 @@
 <h1 align="center">text-table-fast</h1>
 
-<p align="center">Generates borderless text table strings suitable for printing to stdout. Fast. 🏁</p>
+<p align="center">
+	Generates borderless text table strings suitable for printing to stdout.
+	Fast.
+	🏁
+</p>
 
 <p align="center">
 	<!-- prettier-ignore-start -->
@@ -22,10 +26,131 @@ npm i text-table-fast
 ```
 
 ```ts
-import { greet } from "text-table-fast";
+import { textTable } from "text-table-fast";
 
-greet("Hello, world! 💖");
+console.log(
+	textTable([
+		["main", "0123456789abcdef"],
+		["staging", "fedcba9876543210"],
+	]),
+);
 ```
+
+```plaintext
+main     0123456789abcdef
+staging  fedcba9876543210
+```
+
+`textTable` takes in an array of arrays containing strings, numbers, or other printable values.
+
+## Options
+
+`text-table-fast`'s `textTable` can take in an optional second parameter as an object with options
+
+> 🔄 These options are equivalent to [`text-table`](https://www.npmjs.com/package/text-table)'s options, but with expanded names.
+
+### `align`
+
+- Default: `[]`
+- Type: `("center" | "left" | "right")[]`
+
+The alignment for columns, in order.
+These each default to `"left"`.
+
+```ts
+import { textTable } from "text-table-fast";
+
+console.log(
+	textTable(
+		[
+			["abc", "abcd", "ab"],
+			[1234, 12, 1234],
+		],
+		{
+			alignment: ["left", "center", "right"],
+		},
+	),
+);
+```
+
+```plaintext
+abc  abcd  abc
+1234  12  1234
+```
+
+### `horizontalSeparator`
+
+- Default: `"  "`
+- Type: `string`
+
+Characters to put between each column.
+
+```ts
+import { textTable } from "text-table-fast";
+
+console.log(
+	textTable(
+		[
+			["abc", "abcd", "ab"],
+			[1234, 12, 1234],
+		],
+		{
+			horizontalSeparator: " | ",
+		},
+	),
+);
+```
+
+```plaintext
+abc  | abcd |  abc
+1234 |  12  | 1234
+```
+
+### `stringLength`
+
+- Default: `(value) => String(value).length`
+- Type: `(value: string) => number`
+
+How to compute the length of strings, such as for stripping ANSI characters.
+
+```ts
+import color from "cli-color";
+import { textTable } from "text-table-fast";
+
+console.log(
+	textTable(
+		[
+			[color.red("abc"), color.blue("def")],
+			[12, 34],
+		],
+		{
+			stringLength: (value) => color.strip(value).length,
+		},
+	),
+);
+```
+
+```plaintext
+\x1B[31mabc\x1B[39m  \x1B[34mdef\x1B[39m
+12  34
+```
+
+## Comparison to [`text-table`](https://www.npmjs.com/package/text-table)
+
+`text-table-fast` has three advantages over `text-table`:
+
+- It is fast in almost all scenarios, and significantly faster on larger tables.
+- It is under active maintenance, whereas `text-table` hasn't been updated in over a decade.
+- It's written in TypeScript and ships with its own `.d.ts` types, whereas `text-table` requires `@types/text-table` for typings.
+
+### Performance Comparison
+
+`text-table-fast` contains two meaningful optimizations over `text-table`:
+
+- `text-table` includes usage of of [an quadratically expensive `/\s+$/`](https://ota-meshi.github.io/eslint-plugin-regexp/playground/#eJyrVkrOT0lVslLSj4kp1lbRV6oFADQgBS4=); `text-table-fast` uses [`String.prototype.trimEnd`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd) instead.
+- `text-table` executes a regular expression match on each row cell for its `'.'` (decimal) alignment option; `text-table-fast` will skip that match if and when decimal alignment support is added.
+
+> ESLint issue to be filed soon with a performance comparison. ⚡️
 
 ## Contributors
 
@@ -47,6 +172,9 @@ greet("Hello, world! 💖");
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- spellchecker: enable -->
 
-<!-- You can remove this notice if you don't want it 🙂 no worries! -->
+## Acknowledgements
+
+This package is a near-drop-in replacement for venerable [`text-table`](https://www.npmjs.com/package/text-table), which has served a plethora of projects -including ESLint- well for over a decade.
+Many thanks to substack for creating the original `text-table` package! 💖
 
 > 💙 This package was templated with [`create-typescript-app`](https://github.com/JoshuaKGoldberg/create-typescript-app).

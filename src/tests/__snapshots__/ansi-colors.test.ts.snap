@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ansi-colors > [["\\u001b[31mRed\\u001b[39m","\\u001b[32mGreen\\u001b[39m","\\u001b[34mBlue\\u001b[39m"],["\\u001b[1mBold\\u001b[22m","\\u001b[4mUnderline\\u001b[24m","\\u001b[3mItalic\\u001b[23m"],["\\u001b[7mInverse\\u001b[27m","\\u001b[9mStrike\\u001b[29m","\\u001b[5mBlink\\u001b[25m"],["bar","45","abcd"]] 1`] = `
+"
+Red        Green    Blue
+Bold     Underline  Italic
+Inverse    Strike   Blink
+bar          45     abcd
+"
+`;
+
+exports[`ansi-colors > [["\\u001b[31mRed\\u001b[39m","\\u001b[32mGreen\\u001b[39m","\\u001b[34mBlue\\u001b[39m"],["\\u001b[1mBold\\u001b[22m","\\u001b[4mUnderline\\u001b[24m","\\u001b[3mItalic\\u001b[23m"]] 1`] = `
+"
+Red     Green    Blue
+Bold  Underline  Italic
+"
+`;
+
+exports[`ansi-colors > [["\\u001b[31mRed\\u001b[39m","\\u001b[32mGreen\\u001b[39m","\\u001b[34mBlue\\u001b[39m"]] 1`] = `
+"
+Red  Green  Blue
+"
+`;

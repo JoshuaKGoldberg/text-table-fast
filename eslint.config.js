@@ -5,7 +5,7 @@ import jsonc from "eslint-plugin-jsonc";
 import markdown from "eslint-plugin-markdown";
 import n from "eslint-plugin-n";
 import packageJson from "eslint-plugin-package-json/configs/recommended";
-import perfectionistNatural from "eslint-plugin-perfectionist/configs/recommended-natural";
+import perfectionist from "eslint-plugin-perfectionist";
 import * as regexp from "eslint-plugin-regexp";
 import vitest from "eslint-plugin-vitest";
 import yml from "eslint-plugin-yml";
@@ -35,7 +35,9 @@ export default tseslint.config(
 	jsdoc.configs["flat/recommended-typescript-error"],
 	n.configs["flat/recommended"],
 	packageJson,
-	perfectionistNatural,
+	// After updating for https://github.com/JoshuaKGoldberg/create-typescript-app/issues/1588 ...
+	// eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
+	perfectionist.configs["recommended-natural"],
 	regexp.configs["flat/recommended"],
 	...tseslint.config({
 		extends: [
@@ -74,7 +76,7 @@ export default tseslint.config(
 				"error",
 				{
 					order: "asc",
-					"partition-by-comment": true,
+					partitionByComment: true,
 					type: "natural",
 				},
 			],
@@ -97,6 +99,7 @@ export default tseslint.config(
 		files: ["**/*.md/*.ts"],
 		rules: {
 			"n/no-missing-import": ["error", { allowModules: ["text-table-fast"] }],
+			"n/no-unpublished-import": ["error", { allowModules: ["cli-color"] }],
 		},
 	},
 	{

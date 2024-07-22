@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`general > [["main","0123456789abcdef"],["staging","fedcba9876543210"]] 1`] = `
+"
+main     0123456789abcdef
+staging  fedcba9876543210
+"
+`;
+
+exports[`general > [["main","0123456789abcdef"]] 1`] = `
+"
+main  0123456789abcdef
+"
+`;
+
+exports[`general > [["master","0123456789abcdef"],["staging","fedcba9876543210"]] 1`] = `
+"
+master   0123456789abcdef
+staging  fedcba9876543210
+"
+`;
