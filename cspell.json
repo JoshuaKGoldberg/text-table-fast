@@ -1,6 +1,7 @@
 {
 	"dictionaries": ["typescript"],
 	"ignorePaths": [
+		"./prepare",
 		".github",
 		"CHANGELOG.md",
 		"coverage",
