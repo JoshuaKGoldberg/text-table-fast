@@ -57,8 +57,8 @@ importers:
         specifier: 0.15.2
         version: 0.15.2(eslint@9.8.0)(jsonc-eslint-parser@2.4.0)
       eslint-plugin-perfectionist:
-        specifier: 3.1.0
-        version: 3.1.0(eslint@9.8.0)(typescript@5.5.4)
+        specifier: 3.1.1
+        version: 3.1.1(eslint@9.8.0)(typescript@5.5.4)
       eslint-plugin-regexp:
         specifier: 2.6.0
         version: 2.6.0(eslint@9.8.0)
@@ -1737,8 +1737,8 @@ packages:
       eslint: '>=8.0.0'
       jsonc-eslint-parser: ^2.0.0
 
-  eslint-plugin-perfectionist@3.1.0:
-    resolution: {integrity: sha512-QNL1L0CMo8FoKM3VkNdR8HUq8Nrl0nGZFF9jzjU8PYvDtds2bvNOm9RwpQC4Gf3M27F6CBp5JsA3jBYT4TBiHA==}
+  eslint-plugin-perfectionist@3.1.1:
+    resolution: {integrity: sha512-joaAPd2gVNV+Gm+xU6tqOxy9WlBcb/6TSCUaHLNSdhot/KcsyiKSzeTVToasrCPIxgqgGwcOy+AJaGaBhBwblw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       astro-eslint-parser: ^1.0.2
@@ -5315,7 +5315,7 @@ snapshots:
       sort-package-json: 1.57.0
       validate-npm-package-name: 5.0.1
 
-  eslint-plugin-perfectionist@3.1.0(eslint@9.8.0)(typescript@5.5.4):
+  eslint-plugin-perfectionist@3.1.1(eslint@9.8.0)(typescript@5.5.4):
     dependencies:
       '@typescript-eslint/types': 8.0.1
       '@typescript-eslint/utils': 8.0.1(eslint@9.8.0)(typescript@5.5.4)
