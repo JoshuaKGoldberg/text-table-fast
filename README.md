@@ -152,6 +152,12 @@ console.log(
 
 See [eslint/eslint#18709 Performance: long print time in stylish formatter's text-table for long report strings](https://github.com/eslint/eslint/issues/18709) for a performance comparison.
 
+## Markdown Generation
+
+This package does not generate complaint Markdown tables.
+Doing so requires handling special characters in cell data.
+You're better off using a dedicated package such as [`markdown-table`](https://www.npmjs.com/package/markdown-table).
+
 ## Contributors
 
 <!-- spellchecker: disable -->
