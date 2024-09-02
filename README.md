@@ -154,7 +154,7 @@ See [eslint/eslint#18709 Performance: long print time in stylish formatter's tex
 
 ## Markdown Generation
 
-This package does not generate complaint Markdown tables.
+This package does not generate compliant Markdown tables.
 Doing so requires handling special characters in cell data.
 You're better off using a dedicated package such as [`markdown-table`](https://www.npmjs.com/package/markdown-table).
 
