@@ -35,7 +35,7 @@
 	},
 	"devDependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "4.4.1",
-		"@eslint/js": "9.22.0",
+		"@eslint/js": "9.23.0",
 		"@release-it/conventional-changelog": "10.0.0",
 		"@types/cli-color": "2.0.6",
 		"@types/eslint-plugin-markdown": "2.0.2",
