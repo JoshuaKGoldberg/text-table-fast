@@ -14,8 +14,8 @@
 	<!-- prettier-ignore-end -->
 	<a href="https://github.com/JoshuaKGoldberg/text-table-fast/blob/main/.github/CODE_OF_CONDUCT.md" target="_blank"><img alt="🤝 Code of Conduct: Kept" src="https://img.shields.io/badge/%F0%9F%A4%9D_code_of_conduct-kept-21bb42" /></a>
 	<a href="https://codecov.io/gh/JoshuaKGoldberg/text-table-fast" target="_blank"><img alt="🧪 Coverage" src="https://img.shields.io/codecov/c/github/JoshuaKGoldberg/text-table-fast?label=%F0%9F%A7%AA%20coverage" /></a>
-	<a href="https://github.com/JoshuaKGoldberg/text-table-fast/blob/main/LICENSE.md" target="_blank"><img alt="📝 License: MIT" src="https://img.shields.io/badge/%F0%9F%93%9D_license-MIT-21bb42.svg"></a>
-	<a href="http://npmjs.com/package/text-table-fast"><img alt="📦 npm version" src="https://img.shields.io/npm/v/text-table-fast?color=21bb42&label=%F0%9F%93%A6%20npm" /></a>
+	<a href="https://github.com/JoshuaKGoldberg/text-table-fast/blob/main/LICENSE.md" target="_blank"><img alt="📝 License: MIT" src="https://img.shields.io/badge/%F0%9F%93%9D_license-MIT-21bb42.svg" /></a>
+	<a href="http://npmjs.com/package/text-table-fast" target="_blank"><img alt="📦 npm version" src="https://img.shields.io/npm/v/text-table-fast?color=21bb42&label=%F0%9F%93%A6%20npm" /></a>
 	<img alt="💪 TypeScript: Strict" src="https://img.shields.io/badge/%F0%9F%92%AA_typescript-strict-21bb42.svg" />
 </p>
 
@@ -158,6 +158,11 @@ This package does not generate compliant Markdown tables.
 Doing so requires handling special characters in cell data.
 You're better off using a dedicated package such as [`markdown-table`](https://www.npmjs.com/package/markdown-table).
 
+## Development
+
+See [`.github/CONTRIBUTING.md`](./.github/CONTRIBUTING.md), then [`.github/DEVELOPMENT.md`](./.github/DEVELOPMENT.md).
+Thanks! 🏁
+
 ## Contributors
 
 <!-- spellchecker: disable -->
@@ -178,9 +183,4 @@ You're better off using a dedicated package such as [`markdown-table`](https://w
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- spellchecker: enable -->
 
-## Acknowledgements
-
-This package is a near-drop-in replacement for venerable [`text-table`](https://www.npmjs.com/package/text-table), which has served a plethora of projects -including ESLint- well for over a decade.
-Many thanks to substack for creating the original `text-table` package! 💖
-
-> 💙 This package was templated with [`create-typescript-app`](https://github.com/JoshuaKGoldberg/create-typescript-app).
+> 💝 This package was templated with [`create-typescript-app`](https://github.com/JoshuaKGoldberg/create-typescript-app) using the [Bingo engine](https://create.bingo).
