@@ -188,4 +188,4 @@ Thanks! 🏁
 This package is a near-drop-in replacement for the venerable [`text-table`](https://www.npmjs.com/package/text-table), which has served a plethora of projects -including ESLint- well for over a decade.
 Many thanks to substack for creating the original `text-table` package! 💖
 
-> 💝 This package was templated with [`create-typescript-app`](https://github.com/JoshuaKGoldberg/create-typescript-app) using the [Bingo engine](https://create.bingo).
+> 💝 This package was templated with [`create-typescript-app`](https://github.com/JoshuaKGoldberg/create-typescript-app) using the [Bingo framework](https://create.bingo).
