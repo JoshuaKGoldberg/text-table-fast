@@ -1,7 +1,7 @@
 import color from "cli-color";
 import { describe, expect, test } from "vitest";
 
-import { textTable } from "../index.js";
+import { textTable } from "../index.ts";
 
 describe("ansi-colors", () => {
 	test.each([

@@ -19,6 +19,8 @@ export interface TextTableOptions {
 	stringLength?: GetStringLength;
 }
 
+// Untyped JavaScript callers may pass non-string cell values
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-conversion
 const defaultStringLength: GetStringLength = (value) => String(value).length;
 
 export function textTable(rows: string[][], opts: TextTableOptions = {}) {
