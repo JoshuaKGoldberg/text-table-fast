@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-import { TableAlignment, textTable } from "../index.js";
+import { TableAlignment, textTable } from "../index.ts";
 
 describe("align", () => {
 	test.each<[string[][], TableAlignment[]]>([
