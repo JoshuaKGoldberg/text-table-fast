@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.1](https://github.com/JoshuaKGoldberg/text-table-fast/compare/0.2.0...0.2.1) (2026-11-24)
+
+### Bug Fixes
+
+- bump to create-typescript-app@2.87.18 ([#890](https://github.com/JoshuaKGoldberg/text-table-fast/issues/890)) ([1886ddf](https://github.com/JoshuaKGoldberg/text-table-fast/commit/1886ddf9b83164be6f4245134420b96658328c63)), closes [#889](https://github.com/JoshuaKGoldberg/text-table-fast/issues/889)
+
 ## 0.2.0 (2026-09-20)
 
 ### Bug Fixes
